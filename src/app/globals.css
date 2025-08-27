@@ -7,12 +7,29 @@
 	padding: 0;
 	margin: 0;
 }
+/* Custom animation for glowing gradient */
+@keyframes glow {
+	0% {
+		background-position: 200% 0;
+	}
+
+	100% {
+		background-position: -200% 0;
+	}
+}
+
+/* Register animation as a utility */
+@layer utilities {
+	.animate-glow {
+		animation: glow 10s linear infinite;
+		background-size: 200% 200%;
+	}
+}
 
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--font-source-code-pro: var(--font-source-code-pro);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,5 +42,5 @@
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-source-code-pro), Arial, Helvetica, sans-serif;
 }

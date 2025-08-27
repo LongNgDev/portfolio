@@ -3,7 +3,7 @@ import photo from "@/assets/devImage.jpg";
 
 function ProfilePhoto() {
 	return (
-		<div className="relative w-[90%] h-[450px] overflow-hidden rounded-2xl">
+		<div className="relative overflow-hidden w-full h-[500px] rounded-2xl">
 			<Image src={photo} alt="Profile Photo" fill className="object-cover" />
 		</div>
 	);
