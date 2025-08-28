@@ -3,10 +3,10 @@ import Link from "next/link";
 
 function NavList() {
 	const navItems = [
-		{ name: "About", href: "#" },
 		{ name: "Skills", href: "#" },
 		{ name: "Experiences", href: "#" },
 		{ name: "Projects", href: "#" },
+		// { name: "About", href: "#" },
 		{ name: "Contact", href: "#" },
 	];
 

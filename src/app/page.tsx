@@ -1,6 +1,7 @@
 import Intro from "@/app/components/intro";
 import ProfilePhoto from "@/app/components/profilePhoto";
 import NavList from "./components/navList";
+import Stats from "./components/stats";
 
 export default function Home() {
 	return (
@@ -22,7 +23,7 @@ export default function Home() {
 				</div>
 
 				{/* Statistic Section */}
-				<div>Statistic</div>
+				<Stats />
 			</div>
 		</>
 	);
