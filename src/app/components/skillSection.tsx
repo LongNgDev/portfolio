@@ -35,7 +35,7 @@ export default function SkillsSection() {
 	]; */
 
 	return (
-		<section className="my-15 ">
+		<section className="mt-24" id="skill">
 			{/* <h2 className="mb-6 text-2xl font-semibold text-center">Skills</h2> */}
 
 			{/* Slider 1 */}
@@ -45,7 +45,7 @@ export default function SkillsSection() {
 			{/* <SkillSlider items={databases} direction="left" speed={35} /> */}
 
 			{/* Slider 3 */}
-			<SkillSlider items={devTools} direction="right" speed={90} />
+			<SkillSlider items={devTools} direction="right" speed={100} />
 		</section>
 	);
 }

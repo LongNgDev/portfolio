@@ -9,7 +9,7 @@ export default function Home() {
 		<>
 			<div id="container" className="px-10 pt-50 mx-auto w-dvw max-w-[1440px]">
 				{/* Intro Page */}
-				<div className="flex justify-between gap-10">
+				<div className="flex justify-between gap-10 mt-10">
 					<div className="flex flex-col w-full gap-10">
 						{/* Intro Section */}
 						<Intro />

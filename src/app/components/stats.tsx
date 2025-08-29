@@ -20,14 +20,14 @@ function Stats() {
 	];
 
 	return (
-		<section className="my-15 bg-hacker-bg text-hacker-text">
-			<div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto text-center sm:grid-cols-3">
+		<section className="">
+			<div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto text-center sm:grid-cols-3 ">
 				{stats.map((stat, index) => (
 					<div
 						key={index}
 						className="flex flex-col items-center p-6 transition-all duration-300 ease-in-out rounded-2xl hover:scale-105"
 					>
-						<h3 className="mt-4 text-3xl font-bold">
+						<h3 className="mt-4 text-4xl font-semibold">
 							<CountUp
 								end={stat.value}
 								duration={3}
