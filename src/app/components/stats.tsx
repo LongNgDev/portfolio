@@ -20,7 +20,7 @@ function Stats() {
 	];
 
 	return (
-		<section className="py-16 bg-hacker-bg text-hacker-text">
+		<section className="my-15 bg-hacker-bg text-hacker-text">
 			<div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto text-center sm:grid-cols-3">
 				{stats.map((stat, index) => (
 					<div
