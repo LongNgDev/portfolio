@@ -20,7 +20,7 @@ function NavList() {
 					key={item.name}
 					href={item.href}
 					className="group inline-block first:pt-0 pt-4 pb-1 pr-1 text-xl font-semibold tracking-tight text-purple-400
-                 transition-colors duration-300 ease-out hover:text-[var(--text-primary)]"
+                 transition-colors duration-300 ease-out hover:text-[#00F5D4]"
 				>
 					<div className="w-fit">
 						<span className="inline-block transition-transform duration-300 ease-out origin-left will-change-transform transform-gpu group-hover:translate-x-1 group-hover:scale-105">

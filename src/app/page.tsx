@@ -7,13 +7,12 @@ import HeroSection from "./components/heroSection";
 
 export default function Home() {
 	return (
-		<div className="px-10 mx-auto w-dvw max-w-[1440px]">
+		<div className="px-10 mx-auto w-dvw max-w-[1440px] relative">
 			{/* Main Section */}
 			<div className="flex flex-col items-center justify-center h-dvh">
 				{/* Hero section */}
-				<section className="h-[100px] w-full">
-					<HeroSection />
-				</section>
+				<HeroSection />
+
 				{/* Website URL list */}
 
 				{/* Intro Section */}
