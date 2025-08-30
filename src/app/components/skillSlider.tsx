@@ -38,7 +38,7 @@ function SkillSlider({
 							alt={item.alt}
 							width={128}
 							height={128}
-							className="transition-all duration-300 opacity-65 hover:opacity-100 hover:-translate-y-4"
+							className="transition-all duration-300 opacity-50 hover:opacity-100 hover:-translate-y-4"
 						/>
 					</div>
 				))}

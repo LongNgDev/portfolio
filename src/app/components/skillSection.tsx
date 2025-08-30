@@ -35,17 +35,17 @@ export default function SkillsSection() {
 	]; */
 
 	return (
-		<section className="mt-24" id="skill">
+		<section className="h-dvh" id="skill">
 			{/* <h2 className="mb-6 text-2xl font-semibold text-center">Skills</h2> */}
 
 			{/* Slider 1 */}
-			<SkillSlider items={languages} direction="left" speed={80} />
+			<SkillSlider items={languages} direction="left" speed={40} />
 
 			{/* Slider 2 */}
 			{/* <SkillSlider items={databases} direction="left" speed={35} /> */}
 
 			{/* Slider 3 */}
-			<SkillSlider items={devTools} direction="right" speed={100} />
+			<SkillSlider items={devTools} direction="right" speed={30} />
 		</section>
 	);
 }

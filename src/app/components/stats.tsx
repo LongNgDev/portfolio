@@ -20,26 +20,25 @@ function Stats() {
 	];
 
 	return (
-		<section className="">
-			<div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto text-center sm:grid-cols-3 ">
+		<section className="my-16">
+			<div className="grid max-w-5xl grid-cols-1 mx-auto text-center sm:grid-cols-3 ">
 				{stats.map((stat, index) => (
-					<div
-						key={index}
-						className="flex flex-col items-center p-6 transition-all duration-300 ease-in-out rounded-2xl hover:scale-105"
-					>
-						<h3 className="mt-4 text-4xl font-semibold">
-							<CountUp
-								end={stat.value}
-								duration={3}
-								suffix={
-									stat.label.includes("Projects") ||
-									stat.label.includes("Code Commits")
-										? "+"
-										: ""
-								} // to Add "+" prefix for stat
-							/>
-						</h3>
-						<p className="mt-2 text-sm tracking-wider">{stat.label}</p>
+					<div key={index} className="relative">
+						<div className="flex flex-col items-center p-6 transition-transform duration-300 ease-in-out will-change-transform transform-gpu rounded-2xl hover:scale-110">
+							<span className="mt-4 text-4xl font-semibold">
+								<CountUp
+									end={stat.value}
+									duration={3}
+									suffix={
+										stat.label.includes("Projects") ||
+										stat.label.includes("Code Commits")
+											? "+"
+											: ""
+									} // to Add "+" prefix for stat
+								/>
+							</span>
+							<p className="mt-2 text-sm ">{stat.label}</p>
+						</div>
 					</div>
 				))}
 			</div>

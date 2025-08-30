@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: #0a0a0a;
+	--foreground: #ededed;
+	--text-primary: #00f5d4;
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -20,6 +21,9 @@
 	}
 }
 
+@layer base {
+}
+
 /* Register animation as a utility */
 @layer utilities {
 	.animate-glow {
@@ -34,12 +38,12 @@
 	--font-source-code-pro: var(--font-source-code-pro);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #0a0a0a;
 		--foreground: #ededed;
 	}
-}
+} */
 
 body {
 	background: var(--background);

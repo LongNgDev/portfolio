@@ -27,6 +27,7 @@
     "react-fast-marquee": "^1.6.5",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "typewriter-effect": "^2.22.0"
+    "typewriter-effect": "^2.22.0",
+    "vanilla-tilt": "^1.8.1"
   }
 }
