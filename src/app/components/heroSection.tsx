@@ -22,18 +22,43 @@ function HeroSection() {
 			<h1 className="text-3xl font-semibold tracking-wide capitalize">
 				Long Nguyen
 			</h1>
-			<div className="flex items-center gap-6 px-10 ">
-				<button className="flex items-center gap-2 px-4 py-[6px] uppercase border rounded-full">
-					<span className="text-lg">Resume</span>
-					<FiDownload className="text-xl" />
+			<div className="flex items-center gap-6 px-10  ">
+				{/* Button to download Resume */}
+				<button
+					className="
+						group relative flex items-center justify-end overflow-hidden
+						h-10 w-10 hover:w-34
+						rounded-full border border-[var(--accent)]
+						text-[var(--accent)] hover:bg-[var(--accent)] hover:text-background
+						transition-all duration-500 cursor-pointer
+					"
+				>
+					{/* Label slides in from the left, doesn’t affect layout */}
+					<span
+						className="
+							absolute left-0
+							-translate-x-[200%] group-hover:translate-x-[50%] :
+							transition-transform duration-500
+							whitespace-nowrap
+						"
+					>
+						Resume
+					</span>
+
+					{/* Icon stays perfectly centred on the right */}
+					<div className="flex items-center justify-center w-10 h-10 shrink-0">
+						<FiDownload className="text-xl" />
+					</div>
 				</button>
+
+				{/* Link to Social Media */}
 				{SOCIAL.map((item, index) => {
 					return (
 						<Link
 							key={index}
 							href={item.path}
 							target="_blank"
-							className="flex items-center justify-center w-10 h-10 border rounded-full"
+							className="flex items-center justify-center w-10 h-10 border rounded-full cursor-pointer hover:bg-[var(--accent)] hover:text-background hover:cursor-pointer text-[var(--accent)]"
 						>
 							{React.createElement(item.icon)}
 						</Link>
