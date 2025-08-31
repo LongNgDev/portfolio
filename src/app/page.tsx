@@ -1,9 +1,10 @@
 import Intro from "@/app/components/intro";
 import ProfilePhoto from "@/app/components/profilePhoto";
 import NavList from "./components/navList";
-import Stats from "./components/stats";
+// import Stats from "./components/stats";
 import SkillsSection from "./components/skillSection";
 import HeroSection from "./components/heroSection";
+import SkillSectionDemo from "./components/skillSectionDemo";
 
 export default function Home() {
 	return (
@@ -16,7 +17,7 @@ export default function Home() {
 				{/* Website URL list */}
 
 				{/* Intro Section */}
-				<section className="w-full my-auto h-fit">
+				<section className="w-full my-auto h-3/5">
 					{/* Intro Page */}
 					<div className="flex justify-between gap-10">
 						<div className="flex flex-col w-full gap-10">
@@ -28,18 +29,19 @@ export default function Home() {
 						</div>
 
 						{/* Image Section */}
-						<div className="flex flex-col items-center justify-center w-full">
+						<div className="flex flex-col items-center justify-start w-full">
 							<ProfilePhoto />
 						</div>
 					</div>
 
 					{/* Statistic Section */}
-					<Stats />
+					{/* <Stats /> */}
 				</section>
 			</div>
 
 			{/* Skills Page */}
-			<SkillsSection />
+			{/* <SkillsSection /> */}
+			<SkillSectionDemo />
 		</div>
 	);
 }

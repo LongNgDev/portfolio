@@ -28,7 +28,7 @@ function SkillSlider({
 				direction={direction}
 				speed={speed}
 				gradient
-				gradientColor={"#0a0a0a"} // dark fade
+				gradientColor={"var(--background)"} // dark fade
 				gradientWidth={150}
 			>
 				{items.map((item, index) => (

@@ -34,9 +34,9 @@ function Intro() {
 				With experience across <strong>full-stack development</strong>,
 				<strong>backend engineering</strong>, and <strong>automation</strong>, I
 				enjoy designing clean databases, crafting robust APIs, and turning
-				complex ideas into elegant, user-friendly solutions. Currently based in
-				Melbourne, I’m passionate about learning, problem-solving, and brewing
-				code with coffee ☕.
+				complex ideas into elegant, user-friendly solutions. Currently based in{" "}
+				<strong>Melbourne</strong>, I&apos;m passionate about learning,
+				problem-solving, and brewing code with coffee ☕.
 			</p>
 		</div>
 	);
